@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact - Student Blog</title>
+  <meta name="description" content="Contact page for Student Blog readers to reach Canaan Davis.">
+  <style>
+    :root{
+      --bg:#f7f7f8;
+      --card:#ffffff;
+      --muted:#6b6b72;
+      --accent:#1f6feb;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color:#111;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      height:100%
+    }
+    body{
+      margin:0;
+      background:var(--bg)
+    }
+    .wrap{
+      max-width:900px;
+      margin:40px auto;
+      padding:20px
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:24px
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px
+    }
+    .logo{
+      width:52px;
+      height:52px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#5bd1ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:700
+    }
+    h1{
+      font-size:24px;
+      margin:0
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:12px;
+      font-size:14px
+    }
+    nav a:hover{
+      color:var(--accent)
+    }
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:24px;
+      box-shadow:0 6px 18px rgba(16,24,40,0.04)
+    }
+    label{
+      display:block;
+      margin-top:12px;
+      font-weight:500
+    }
+    input,textarea{
+      width:100%;
+      padding:10px;
+      margin-top:6px;
+      border-radius:8px;border:1px solid #ccc;font-size:14px
+    }
+    textarea{
+      height:120px;
+      resize:none
+    }
+    button{
+      margin-top:14px;
+      padding:10px 16px;
+      background:var(--accent);
+      color:#fff;
+      border:none;
+      border-radius:8px;
+      cursor:pointer
+    }
+    button:hover{
+      opacity:0.9
+    }
+    footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      margin-top:24px
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">SB</div>
+        <h1>Contact</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card">
+        <h2>Send Me a Letter</h2>
+        <p>If you want to contact me, fill out the form below. I’ll reply to your message as soon as I can.</p>
+        <form onsubmit="event.preventDefault();alert('Message not sent successfully!');">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" placeholder="Write your letter here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <h2>My Information</h2>
+        <p><strong>Name:</strong> Canaan Davis</p>
+        <p><strong>Email:</strong> canaandavis321@gmail.com</p>
+        <p><strong>Location:</strong> Abuja, Nigeria</p>
+        <p><strong>Field of Study:</strong> Computer Science</p>
+      </div>
+    </main>
+
+    <footer>
+      <div>© 2025 Student Blog. Designed by Canaan Davis.</div>
+    </footer>
+  </div>
+</body>
+</html>

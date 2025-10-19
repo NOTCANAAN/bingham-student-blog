@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Intro to Programming</title>
+  <meta name="description" content="Contact page for Student Blog readers to reach Canaan Davis.">
+  <style>
+    :root{
+      --bg:#f7f7f8;
+      --card:#ffffff;
+      --muted:#6b6b72;
+      --accent:#1f6feb;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color:#111;
+    }
+    
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg)}
+    .wrap{max-width:900px;margin:40px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#5bd1ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{font-size:24px;margin:0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px;font-size:14px}
+    nav a:hover{color:var(--accent)}
+    .card{background:var(--card);border-radius:12px;padding:24px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    label{display:block;margin-top:12px;font-weight:500}
+    input,textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #ccc;font-size:14px}
+    textarea{height:120px;resize:none}
+    button{margin-top:14px;padding:10px 16px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer}
+    button:hover{opacity:0.9}
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px}
+        p{
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+        .back-btn{
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 16px;
+      background: #1f6feb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+        .back-btn:hover{
+      background: #1551a1;
+    }
+        header{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        margin-bottom:18px}
+    .brand{
+        display:flex;
+        align-items:center;
+        gap:12px}
+    nav a{
+        color:var(--muted);
+        text-decoration:none;
+        font-size:14px;
+        padding:10px;
+    }
+        .container{
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    pre{
+  background:#f4f4f4;
+  padding:10px;
+  border-left:4px solid #1f6feb;
+  overflow-x:auto;
+  margin:10px 0;
+}
+code{
+  font-family: Consolas, monospace;
+  color:#1f6feb;
+}
+     h2{
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">SB</div>
+        <h1>Intro to Programming</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+  <div class="container">
+  <main>
+    <section class="content">
+      <h2>Quick Start Guide</h2>
+      <p>Follow these steps to begin your programming journey with Python:</p>
+
+      <ol>
+        <li><strong>Install Python:</strong> Go to <a href="https://www.python.org/downloads" target="_blank">python.org/downloads</a></li>
+        <li>Download the latest version for your operating system.</li>
+        <li>On Windows, check “Add Python to PATH” before clicking Install.</li>
+        <li><strong>Write Your First Script:</strong> Open IDLE or VS Code. Type the following line and run it.</li>
+
+
+      <pre><code>print("Hello, World!")</code></pre>
+
+      <ol start="3">
+        <li><strong>Save Your File:</strong> Save your script with a clear name like <code>hello.py</code>.</li>
+        <li><strong>Lern Basic Concepts:</strong></li>
+    <ul>
+      <li><strong>Variables</strong></li>
+    </ul>
+    <pre><code>name = "Canaan"
+age = 18
+print(name, age)</code></pre>
+
+    <ul>
+      <li><strong>Input and Output</strong></li>
+    </ul>
+    <pre><code>name = input("Enter your name: ")
+print("Welcome", name)</code></pre>
+
+    <ul>
+      <li><strong>If Statements</strong></li>
+    </ul>
+    <pre><code>if age > 18:
+    print("Adult")
+else:
+    print("Underage")</code></pre>
+
+    <ul>
+      <li><strong>Loops</strong></li>
+    </ul>
+    <pre><code>for i in range(5):
+    print(i)</code></pre>
+
+    <li><strong>Practice Small Problems Daily</strong>
+    <ul>
+      <li>Write small scripts that calculate or repeat tasks.</li>
+      <li>Use <a href="https://www.w3schools.com/python/" target="_blank">w3schools.com/python</a> or <a href="https://www.programiz.com/python" target="_blank">programiz.com/python</a>.</li>
+      <li>Practice on <a href="https://replit.com" target="_blank">Replit</a> or LeetCode beginner problems.</li>
+    </ul>
+
+    <li><strong>Save and Organize Your Code</strong></li>
+    <ul>
+      <li>Create a folder named <strong>MyPythonProjects</strong>.</li>
+      <li>Save each file with a clear name:
+        <ul>
+          <li>hello.py</li>
+          <li>calculator.py</li>
+          <li>loop_practice.py</li>
+        </ul>
+      </li>
+    </ul>
+
+    <li><strong>Move Forward</strong></li>
+    <p>After learning the basics, continue with:</p>
+    <ul>
+      <li>Functions</li>
+      <li>Lists and Dictionaries</li>
+      <li>File Handling</li>
+      <li>Error Handling (try/except)</li>
+      <li>Simple projects like a calculator or quiz app</li>
+    </ul>
+
+  </ol>
+    </section>
+  </main>
+</div>
+
+  <footer>
+    <p>&copy; 2025 Student Blog. All rights reserved.</p>
+  </footer>
+  </div>
+</body>
+</html>

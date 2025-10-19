@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About Me - Student Blog</title>
+  <meta name="description" content="About the author of the Student Blog.">
+  <style>
+    :root{
+      --bg:#f7f7f8;
+      --card:#ffffff;
+      --muted:#6b6b72;
+      --accent:#1f6feb;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color:#111;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg)}
+    .wrap{max-width:900px;margin:40px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#5bd1ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{font-size:24px;margin:0}
+        .circle-image{
+      width: 200px;
+      height: 200px;
+      border-radius: 60%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid black;
+    }
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px;font-size:14px}
+    nav a:hover{color:var(--accent)}
+    .card{background:var(--card);border-radius:12px;padding:24px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    p{line-height:1.6;color:#222}
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">SB</div>
+        <h1>About Me</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card">
+                <img src="myimage.jpg" alt="image" class="circle-image" style="width: 200px;height: 300px;">
+        <h2>Hello, I'm Canaan Davis</h2>
+        <p>I'm a Computer Science student who enjoys learning new things and sharing simple notes that help others study better. This blog is my space to write about school work, personal growth, and tips that make learning easier.</p>
+        <p>I focus on keeping explanations short and clear. When I study, I break topics into smaller parts and use examples to remember them. Here, I post summaries and notes you can use as a quick guide for your courses.</p>
+        <p>Outside school, I enjoy tech, writing, and helping others understand difficult subjects. My goal is to create practical study content that fits into a student’s daily routine.</p>
+      </div>
+    </main>
+
+    <footer>
+      <div>© 2025 Student Blog. Written by Canaan Davis.</div>
+    </footer>
+  </div>
+</body>
+</html>
